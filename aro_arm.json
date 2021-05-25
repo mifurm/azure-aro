@@ -2,12 +2,12 @@
     "location": "westeurope",
     "properties": {
         "clusterProfile": {
-            "domain": "uda696uk",
+            "domain": "<cluster domain>",
             "version": "4.6.17",
             "resourceGroupId": "/subscriptions/<subId>/resourcegroups/aro-cluster-resources-rg"
         },
         "consoleProfile": {
-            "url": "https://console-openshift-console.apps.uda696uk.westeurope.aroapp.io/"
+            "url": "https://console-openshift-console.apps.<cluster domain>.westeurope.aroapp.io/"
         },
         "servicePrincipalProfile": {
             "clientId": "provide-here-cluster-spn-id",
