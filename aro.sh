@@ -6,9 +6,12 @@ CLUSTER=$clustername           # the name of your cluster
 VNET=$vnetname                 # vnet to put the cluster in
 VNET_CIDR=$vnet_cidr
 CLUSTER_RESOURCE_GROUP=$cluster_resource_group #this group must not exist before cluster creation
-MASTER_SUBNET_CIDR = $master_subnet_cidr
-WORKER_SUBNET_CIDR = $worker_subnet_cidr
+MASTER_SUBNET_CIDR=$master_subnet_cidr
+WORKER_SUBNET_CIDR=$worker_subnet_cidr
 
+az group create \
+  --name $CLUSTER_RESOURCE_GROUP \
+  --location $LOCATION
 
 az group create \
   --name $RESOURCEGROUP \
